@@ -1,0 +1,59 @@
+.header {
+    height: 35vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #191a43 0%, #332d85 100%);
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 10px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-name: fadeInAnimation;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    white-space: pre-line;
+}
+
+.desc {
+    margin: 10px 0;
+    font-size: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-name: fadeInAnimation;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    color: rgba(255, 255, 255, 0.7);
+    white-space: pre-line;
+    text-transform: capitalize;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    bottom: -200px;
+}

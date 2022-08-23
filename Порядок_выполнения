@@ -1,0 +1,23 @@
+npm init - инициализация сервера
+npm i express mongoose dotenv path multer - установка нужных модулей для сервера
+npm i -D nodemon - для самообновления сервера
+server.js
+file .env
+node server.js
+package.json =>   "scripts": {"server": "node server.js", "dev": "nodemon server.js" }
+npm run dev (dev - для работы самообновления server- одноразовый запуск без обновления)
+routes=>planes.js
+models=>plane.js
+controllers=>plane.js
+//фух, тем что в файлах выше разбирайся сам)
+npx create-react-app client (--typescript)
+npm i concurrently
+package.json => "scripts": "client": "npm start --prefix client"
+npm i react-router-dom
+{ <Homepage /> }
+paths.jsx
+npm install @reduxjs/toolkit
+npm i react-redux
+блять, много контента, я всё записывать не буду
+npm i axios
+npm install @reduxjs/toolkit react-redux
